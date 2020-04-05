@@ -76,7 +76,7 @@ $Header = @{
 }
 
 <#  If Categories and Comment empty, then the call must be to check  #>
-If (([string]::IsNullOrEmpty($Categories)) -and ([string]::IsNullOrEmpty($Categories))){
+If (([string]::IsNullOrEmpty($Categories)) -and ([string]::IsNullOrEmpty($Comment))){
 
 	$URICheck = "https://api.abuseipdb.com/api/v2/check"
 	$BodyCheck = @{
